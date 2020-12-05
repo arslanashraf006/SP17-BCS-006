@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'simplelevel.dart';
+import 'navigationbar.dart';
 
 class homepage extends StatefulWidget {
   @override
@@ -12,6 +13,9 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.red, title: Text('Dice App')),
+      drawer: Drawer(
+        child: navigationbar(),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,8 +1,10 @@
 import 'dart:io';
 
+import 'package:diceapp/navigationbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'navigationbar.dart';
 import 'home.dart';
 
 import 'package:flutter/services.dart';
@@ -70,9 +72,9 @@ class _DicepageState extends State<Dicepage> {
                 fontSize: 30.0),
           ),
         ),
-        // drawer: Drawer(
-        //      child: MainDrawer(),
-        //     ),
+        drawer: Drawer(
+          child: navigationbar(),
+        ),
         body: Padding(
           padding: const EdgeInsets.fromLTRB(21, 50, 21, 50),
           child: Column(
