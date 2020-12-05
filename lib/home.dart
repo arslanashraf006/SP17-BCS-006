@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'simplelevel.dart';
 
 class homepage extends StatefulWidget {
   @override
@@ -18,6 +19,12 @@ class _homepageState extends State<homepage> {
             RaisedButton(
               color: Colors.red,
               child: Text('Simple Level'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dicepage()),
+                );
+              },
             ),
             SizedBox(
               height: 20,
