@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'simplelevel.dart';
@@ -42,6 +44,16 @@ class _homepageState extends State<homepage> {
               //     MaterialPageRoute(builder: (context) => MyHomePage()),
               //   );
               // },
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            RaisedButton(
+              color: Colors.red,
+              child: Text('Exit Game'),
+              onPressed: () {
+                exit(0);
+              },
             ),
           ],
         ),

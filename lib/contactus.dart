@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'navigationbar.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
@@ -69,6 +71,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   context,
                   MaterialPageRoute(builder: (context) => homepage()),
                 );
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: RaisedButton(
+              child: Text('Exit Game'),
+              onPressed: () {
+                exit(0);
               },
             ),
           ),

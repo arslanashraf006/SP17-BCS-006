@@ -115,9 +115,9 @@ class _DicepageState extends State<Dicepage> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 30),
+                padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(
-                  child: Text('Check Winner Dice'),
+                  child: Text('Winner Dice'),
                   onPressed: () {
                     showAlertDialog(context);
                   },
@@ -125,7 +125,7 @@ class _DicepageState extends State<Dicepage> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 30),
+                padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(
                   onPressed: changeImage,
                   child: Text('Roll Dice'),
@@ -139,7 +139,7 @@ class _DicepageState extends State<Dicepage> {
               // ),
               //
               Padding(
-                padding: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(
                   child: Text('Go to Home'),
                   onPressed: () {
@@ -147,6 +147,15 @@ class _DicepageState extends State<Dicepage> {
                       context,
                       MaterialPageRoute(builder: (context) => homepage()),
                     );
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: RaisedButton(
+                  child: Text('Exit Game'),
+                  onPressed: () {
+                    exit(0);
                   },
                 ),
               ),
