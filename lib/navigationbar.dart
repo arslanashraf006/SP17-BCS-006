@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'contactus.dart';
 
 class navigationbar extends StatelessWidget {
   const navigationbar({Key key}) : super(key: key);
@@ -47,19 +48,19 @@ class navigationbar extends StatelessWidget {
       //Now let's Add the button for the Menu
       //and let's copy that and modify it
 
-      // ListTile(
-      //   onTap: () {
-      //     Navigator.push(
-      //       context,
-      //       MaterialPageRoute(builder: (context) => MyContact()),
-      //     );
-      //   },
-      //   leading: Icon(
-      //     Icons.inbox,
-      //     color: Colors.black,
-      //   ),
-      //   title: Text("Contact Us"),
-      // ),
+      ListTile(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MyContact()),
+          );
+        },
+        leading: Icon(
+          Icons.inbox,
+          color: Colors.black,
+        ),
+        title: Text("Contact Us"),
+      ),
 
       ListTile(
         onTap: () {},

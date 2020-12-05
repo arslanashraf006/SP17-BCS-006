@@ -36,6 +36,12 @@ class _homepageState extends State<homepage> {
             RaisedButton(
               color: Colors.red,
               child: Text('Hard Level'),
+              // onPressed: () {
+              //   Navigator.push(
+              //     context,
+              //     MaterialPageRoute(builder: (context) => MyHomePage()),
+              //   );
+              // },
             ),
           ],
         ),
