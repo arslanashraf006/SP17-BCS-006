@@ -1,5 +1,6 @@
 import 'navigationbar.dart';
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 void main() => runApp(MyContact());
 
@@ -55,6 +56,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
                 color: Colors.white),
+          ),
+          SizedBox(
+            height: 100,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: RaisedButton(
+              child: Text('Go to Home'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => homepage()),
+                );
+              },
+            ),
           ),
         ],
       ),

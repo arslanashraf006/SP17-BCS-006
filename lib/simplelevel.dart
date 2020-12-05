@@ -138,12 +138,18 @@ class _DicepageState extends State<Dicepage> {
               //   ),
               // ),
               //
-              // Padding(
-              //   padding: const EdgeInsets.only(top: 10),
-              //   child: RaisedButton(onPressed: HomeScreen,
-              //     child: Text('Go Home'),
-              //   ),
-              // ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: RaisedButton(
+                  child: Text('Go to Home'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => homepage()),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ));
